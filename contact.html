@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initital-scale=1.0">
+    <meta name="keywords" content="Rija, Rasoanaivo, BloomPetals" />
+    <meta name="description" content="BloomPetals" />
+    <meta name="author" content="Rija Rasoanaivo">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+    <header>
+        <nav> 
+            <aside id="liens">
+            <a href="index.html">Home</a>
+            <a href="entreprise.html">Entreprise</a>
+            <a href="realisations.html">Realisations</a>
+            <a href="contact.html">Contact</a>
+            </aside>
+            <form action="/votre-page-de-recherche" method="get">
+            <input id="search" type="text" name="q" placeholder="Rechercher...">
+            </form>
+        </nav>
+    </header>
+       
+    <main>
+        <section>
+            
+            <form class="formulaire" action="traitement.php" method="post">
+                <h1>Contactez-nous</h1>
+                
+                <label for="civilite">Civilité :</label>
+                <select id="civilite" name="civilite" required>
+                    <option value="Mme">Madame</option>
+                    <option value="M">Monsieur</option>
+                </select>
+
+                <label for="nom">Nom :</label>
+                <input class="formulaire" type="text" id="nom" name="nom" required>
+
+                <label for="prenom">Prénom :</label>
+                <input class="formulaire" type="text" id="nom" name="nom" required>
+
+                <label for="adressepostale">Adresse postale :</label>
+                <input class="formulaire" type="email" id="email" name="email" required>
+
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <label>
+                    <input type="checkbox" id="confidentialite" name="confidentialite" required>
+                    J'accepte les politiques de confidentialité de l'entreprise
+                </label>
+
+                <button type="submit" value="Valider">Valider</button>
+            </form>
+    </section>
+    </main>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
