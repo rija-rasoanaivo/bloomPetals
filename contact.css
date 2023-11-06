@@ -1,0 +1,48 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url('images/pexels-karolina-grabowska-4210804.jpg'); 
+    background-size: 80vh; /* Ajuste la taille de l'image pour couvrir tout le corps */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+}
+header {
+    background-color: rgb(131, 130, 130);
+}
+nav {
+    display: flex;
+    padding: 1%;
+    justify-content: space-between;
+    align-items: center;
+}
+#liens {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+#search {
+    border: none;
+    opacity: 50%;
+    border-radius: 50px; 
+    padding: 1%;
+    margin-right: 10%;
+}
+
+.formulaire {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px; /* Ajustez la valeur pour définir le degré d'arrondi */
+    padding: 5px; /* Ajoute un espacement intérieur pour un meilleur aspect */
+}
+
+
+.formulaire h1, .formulaire label, .formulaire select, .formulaire input, .formulaire textarea, .formulaire button {
+    margin: 10px 0;
+}
+#message {
+    width: 30%; /* Définissez la largeur souhaitée en pixels, pour exemple */
+    height: 200px; /* Définissez la hauteur souhaitée en pixels, pour exemple */
+}

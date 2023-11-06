@@ -1,0 +1,101 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+    background-image: url('images/pexels-ylanite-koppens-2.jpg');
+    background-size: cover;
+}
+header {
+    background-color: rgb(131, 130, 130);
+}
+nav {
+    display: flex;
+    padding: 1%;
+    justify-content: space-between;
+    align-items: center;
+}
+#liens {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+input {
+    border: none;
+    opacity: 50%;
+    border-radius: 50px; 
+    padding: 1%;
+    margin-right: 10%;
+}
+@font-face {
+    font-family: "Titre";
+    src: url("polices/pacifico/Pacifico.ttf") format("truetype");
+}
+.titre {
+    display: flex;
+    justify-content: center;
+}
+.titre article {
+    font-family: 'titre', sans-serif;
+    font-size: 600%;    
+    background: linear-gradient(to right, #ff8000, #01ba01); /* Dégradé de couleur de gauche à droite */
+    -webkit-background-clip: text;
+    background-clip: text; 
+    color: transparent; 
+  }
+.images {
+    perspective: 600vh; /* Perspective pour l'effet 3D */
+    display: flex;
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+    height: 100vh; /* Ajustez la hauteur au besoin */
+}
+.images img{
+    height: 45vh;
+    width: 55vh;
+}
+.carousel {
+    width: 300px; /* Ajustez la largeur au besoin */
+    height: 550px; /* Ajustez la hauteur au besoin */
+    transform-style: preserve-3d; /* Préserve la 3D pour les éléments fils */
+    animation: rotateCarousel 50s linear infinite; /* Applique l'animation "rotateCarousel" */
+}
+.carousel-item {
+    width: 600px; /* Ajustez la largeur au besoin */
+    height: 300px; /* Ajustez la hauteur au besoin */
+    position: absolute;
+    transform-origin: center center; /* Centre de rotation */
+    text-align: center;
+}
+.carousel-item.item1 {
+    transform: rotateY(60deg) translateZ(1000px); /* Angle de rotation pour la première image (60 degrés) et translation Z vers l'arrière */
+    left: 0;
+}
+.carousel-item.item2 {
+    transform: rotateY(120deg) translateZ(1000px); /* Angle de rotation pour la deuxième image (120 degrés) et translation Z vers l'arrière */
+    left: 0;
+}
+.carousel-item.item3 {
+    transform: rotateY(180deg) translateZ(1000px); /* Angle de rotation pour la troisième image (180 degrés) et translation Z vers l'arrière */
+    left: 0;
+}
+.carousel-item.item4 {
+    transform: rotateY(240deg) translateZ(1000px); /* Angle de rotation pour la quatrième image (240 degrés) et translation Z vers l'arrière */
+    left: 0;
+}
+.carousel-item.item5 {
+    transform: rotateY(300deg) translateZ(1000px); /* Angle de rotation pour la cinquième image (300 degrés) et aucune translation Z */
+    left: 0;
+}
+.carousel-item.item6 {
+    transform: rotateY(360deg) translateZ(1000px); /* Angle de rotation pour la sixième image (360 degrés) et aucune translation Z */
+    left: 0;
+}
+@keyframes rotateCarousel {
+    0% {
+        transform: rotateY(0deg); /* Début de l'animation : angle de rotation à 0 degrés */
+    }
+    100% {
+        transform: rotateY(360deg); /* Fin de l'animation : rotation complète à 360 degrés (un tour complet) */
+    }
+}
